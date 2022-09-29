@@ -3,7 +3,7 @@ function draw(tel){
 	graph.width = graph.width;
 	var g = graph.getContext("2d");
     var fx = 125;
-    var fy = 10;
+    var fy = 60;
 	g.lineWidth = 8;
 	g.lineCap = "round";
 	g.strokeStyle = "#fff";
@@ -61,19 +61,26 @@ function draw(tel){
 
 	g.fillStyle = "#fff";	
 	g.font = "15px sans-serif";
-	g.textAlign = "left";
-	g.fillText("淮阴师范学院 学生",345,90+fy);
-	g.fillStyle = "#fff";
-	g.font = "16px sans-serif";
-	g.fillText("TEL : (086)"+tel,125,220+fy);
-	g.fillText("E-mail : ya@public.email.cn",125,250+fy);	
+	g.textAlign = "right";
+	g.fillText("淮阴师范学院 学生",470,80+fy);
+	g.fillText("TEL : (086)"+tel,470,160+fy);
+	g.fillText("E-mail : ya@public.email.cn",470,190+fy);	
 }
+
+function nt(){
+	var x = 6 + 70,
+	    y = 250 + 8,
+	    z = 400 + 49;
+
+	return ' 1' + x + ' 0' + y + ' 4' + z;
+}
+
 function shuoshuo(sha){
 	var graph = document.getElementById("graph");
 	graph.width = graph.width;
 	var g = graph.getContext("2d");
     var fx = 125;
-    var fy = 10;
+    var fy = 60;
 	g.lineWidth = 8;
 	g.lineCap = "round";
 	g.strokeStyle = "#fff";
@@ -130,17 +137,15 @@ function shuoshuo(sha){
 	g.stroke();
 
 	g.fillStyle = "#fff";	
-	g.font = "20px sans-serif";
-	g.textAlign = "left";
-	g.fillText("zhangyan.me",345,90+fy);
-	g.fillStyle = "#fff";
-	g.font = "16px sans-serif";
-	g.fillText(sha,120,180+fy);	
+	g.font = "15px sans-serif";
+	g.textAlign = "right";
+	g.fillText("zhangyan.me",470,80+fy);
+	g.fillText(sha,470,190+fy);	
 }
-draw(" 000 0000 0000 ");
+draw(" 000 0000 0000");
 var gc = document.getElementById("graph");
 gc.ondblclick = function(){
-	draw(" 176" + " 0258" + " 4449 ");
+	draw(nt());
 }
 var i = 0;
 gc.onclick = function(){
@@ -150,6 +155,6 @@ gc.onclick = function(){
 		shuoshuo(one[j]);		
 	}else{
 		i = 0;
-		draw(" 000 0000 0000 ");		
+		draw(" 000 0000 0000");		
 	}
 }
