@@ -62,8 +62,7 @@ function draw(tel){
 	g.fillStyle = "#fff";	
 	g.font = "15px sans-serif";
 	g.textAlign = "left";
-	g.fillText("淮阴师范学院",380,90+fy);
-	g.fillText("学生",443,120+fy);
+	g.fillText("淮阴师范学院 学生",345,90+fy);
 	g.fillStyle = "#fff";
 	g.font = "16px sans-serif";
 	g.fillText("TEL : (086)"+tel,125,220+fy);
@@ -138,7 +137,7 @@ function shuoshuo(sha){
 	g.font = "16px sans-serif";
 	g.fillText(sha,120,180+fy);	
 }
-draw(" --- ---- ---- ");
+draw(" 000 0000 0000 ");
 var gc = document.getElementById("graph");
 gc.ondblclick = function(){
 	draw(" 176" + " 0258" + " 4449 ");
@@ -151,6 +150,6 @@ gc.onclick = function(){
 		shuoshuo(one[j]);		
 	}else{
 		i = 0;
-		draw(" --- ---- ---- ");		
+		draw(" 000 0000 0000 ");		
 	}
 }
