@@ -63,8 +63,9 @@ function draw(tel){
 	g.font = "15px sans-serif";
 	g.textAlign = "right";
 	g.fillText("淮阴师范学院 学生",470,80+fy);
-	g.fillText("TEL : (086)"+tel,470,160+fy);
-	g.fillText("E-mail : ya@public.email.cn",470,190+fy);	
+	g.fillText("写作爱好者",470,110+fy);
+	g.fillText("TEL : (086)"+tel,470,180+fy);
+	g.fillText("E-mail : ya@public.email.cn",470,210+fy);	
 }
 
 function nt(){
