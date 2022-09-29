@@ -79,43 +79,54 @@ function shuoshuo(sha){
 	g.lineCap = "round";
 	g.strokeStyle = "#fff";
 	g.beginPath();
-	g.arc(10+fx,10+fy,10,Math.PI/2,Math.PI*3/2,false);
-	g.moveTo(10+fx,fy);
-	g.lineTo(100+fx,fy);
+	g.arc(10+fx,10+fy,10,Math.PI/2,Math.PI,false);
+	g.moveTo(fx,fy);
+	g.lineTo(fx,10+fy);
 	g.moveTo(10+fx,20+fy);
-	g.lineTo(90+fx,20+fy);
+	g.lineTo(40+fx,20+fy);
+	g.moveTo(60+fx,20+fy);
+	g.lineTo(90+fx,20+fy);	
 	g.stroke();
 
 	g.beginPath();
-	g.arc(90+fx,30+fy,10,Math.PI/2,Math.PI*3/2,true);
-	g.moveTo(fx,40+fy);
-	g.lineTo(90+fx,40+fy);
+	g.arc(40+fx,30+fy,10,-Math.PI/2,0,false);
 	g.stroke();
 
 	g.beginPath();
-	g.moveTo(120+fx,fy);
-	g.lineTo(160+fx,fy);
-	g.moveTo(180+fx,fy);
-	g.lineTo(220+fx,fy);
+	g.arc(90+fx,10+fy,10,0,Math.PI/2,false);
+	g.moveTo(100+fx,fy);
+	g.lineTo(100+fx,10+fy);
+	g.moveTo(50+fx,30+fy);
+	g.lineTo(50+fx,40+fy);
 	g.stroke();
 
 	g.beginPath();
-	g.arc(160+fx,10+fy,10,-Math.PI/2,0,false);
-	g.moveTo(170+fx,10+fy);
-	g.lineTo(170+fx,40+fy);
+	g.arc(130+fx,10+fy,10,-Math.PI/2,Math.PI,true);
+	g.moveTo(130+fx,fy);
+	g.lineTo(210+fx,fy);
+	g.moveTo(130+fx,25+fy);
+	g.lineTo(210+fx,25+fy);
+	g.moveTo(220+fx,10+fy);
+	g.lineTo(220+fx,40+fy);
 	g.stroke();
 
 	g.beginPath();
-	g.arc(250+fx,30+fy,10,-Math.PI/2,Math.PI,true);
-	g.moveTo(240+fx,fy);
+	g.arc(210+fx,10+fy,10,0,-Math.PI/2,true);
+	g.moveTo(120+fx,10+fy);
+	g.lineTo(120+fx,40+fy);
+	g.stroke();
+
+	g.beginPath();
+	g.arc(250+fx,10+fy,10,-Math.PI/2,Math.PI,true);
+	g.moveTo(250+fx,fy);
 	g.lineTo(330+fx,fy);
-	g.moveTo(250+fx,20+fy);
-	g.lineTo(330+fx,20+fy);
+	g.moveTo(340+fx,10+fy);
+	g.lineTo(340+fx,40+fy);
 	g.stroke();
 
 	g.beginPath();
-	g.arc(330+fx,10+fy,10,Math.PI/2,Math.PI*3/2,true);
-	g.moveTo(240+fx,30+fy);
+	g.arc(330+fx,10+fy,10,0,-Math.PI/2,true);
+	g.moveTo(240+fx,10+fy);
 	g.lineTo(240+fx,40+fy);
 	g.stroke();
 
