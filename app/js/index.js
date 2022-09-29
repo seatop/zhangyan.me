@@ -6,7 +6,7 @@ function draw(tel){
     var fy = 10;
 	g.lineWidth = 8;
 	g.lineCap = "round";
-	g.strokeStyle = "#ccc";
+	g.strokeStyle = "#fff";
 	g.beginPath();
 	g.arc(10+fx,10+fy,10,Math.PI/2,Math.PI*3/2,false);
 	g.moveTo(10+fx,fy);
@@ -48,12 +48,12 @@ function draw(tel){
 	g.lineTo(240+fx,40+fy);
 	g.stroke();
 
-	g.fillStyle = "#ccc";	
+	g.fillStyle = "#fff";	
 	g.font = "15px sans-serif";
 	g.textAlign = "left";
-	g.fillText("淮阴师范学院",300,90+fy);
-	g.fillText("学生",230,120+fy);
-	g.fillStyle = "#ddd";
+	g.fillText("淮阴师范学院",380,90+fy);
+	g.fillText("学生",443,120+fy);
+	g.fillStyle = "#fff";
 	g.font = "16px sans-serif";
 	g.fillText("TEL : (086)"+tel,125,220+fy);
 	g.fillText("E-mail : ya@public.email.cn",125,250+fy);	
@@ -66,7 +66,7 @@ function shuoshuo(sha){
     var fy = 10;
 	g.lineWidth = 8;
 	g.lineCap = "round";
-	g.strokeStyle = "#ccc";
+	g.strokeStyle = "#fff";
 	g.beginPath();
 	g.arc(10+fx,10+fy,10,Math.PI/2,Math.PI*3/2,false);
 	g.moveTo(10+fx,fy);
@@ -108,11 +108,11 @@ function shuoshuo(sha){
 	g.lineTo(240+fx,40+fy);
 	g.stroke();
 
-	g.fillStyle = "#ccc";	
+	g.fillStyle = "#fff";	
 	g.font = "20px sans-serif";
 	g.textAlign = "left";
-	g.fillText("seatop.me",370,90+fy);
-	g.fillStyle = "#ddd";
+	g.fillText("zhangyan.me",345,90+fy);
+	g.fillStyle = "#fff";
 	g.font = "16px sans-serif";
 	g.fillText(sha,120,180+fy);	
 }
